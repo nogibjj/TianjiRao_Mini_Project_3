@@ -1,19 +1,15 @@
 """
-Main cli or app entry point
+Main Function For Polars Descriptive Statistics
 """
 
-from mylib.calculator import add
-import click
+import polars as pl
+import matplotlib.pyplot as plt
 
-#var=1;var=2
+def polars_desc(data):
+    # data = pl.read_csv('Electric_Vehicle_Population_Data.csv')
+    return data.describe()
 
-@click.command("add")
-@click.argument("a", type=int)
-@click.argument("b", type=int)
-def add_cli(a, b):
-    click.echo(add(a, b))
-
-
-if __name__ == "__main__":
-    # pylint: disable=no-value-for-parameter
-    add_cli()
+def polars_visual(data):
+    # data = pl.read_csv('Electric_Vehicle_Population_Data.csv')
+    df = pl.read_csv('Electric_Vehicle_Population_Data.csv')
+    plt.hist(data["Model Year"])
