@@ -1,14 +1,10 @@
 # IDS706 Mini-Project 3
 
-## 
-
-
-# IDS_706_Data_Engineering_Systems
 [![CI](https://github.com/nogibjj/TianjiRao_Mini_Project_3/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/TianjiRao_Mini_Project_3/actions/workflows/cicd.yml)
 
 
-## **Report**
 ## Week 3 Polars Descriptive Statistics Script 
+## **Report**
 
 This repo contains:   
 - .devcontainer     
@@ -37,6 +33,11 @@ There are two main functions in the `main.py`:
 
 - `polars_visual(data)`: the `bar_plot()` function also take a DataFrame as the input and will plot of histgram of the `Model Year`. This function is mainly based on the `matplotlib.pyplot.hist()`. 
 
+## Testing Cases
+### Functions
+- `test_desc()` 
+Checking mean, median, and standard deviation
+- `test_visual()` Check the histgram
 
 ## Preparation
 1. Setting up Codespaces
@@ -44,12 +45,11 @@ There are two main functions in the `main.py`:
 
 ## Check format and test errors
 1. Format `make format`
-2. Lint `make lint`
+2. Lint `make lint`     
+<img width="574" alt="Screenshot 2023-09-12 at 5 57 40 PM" src="https://github.com/nogibjj/TianjiRao_Mini_Project_3/assets/104114843/7bfe1332-340f-46aa-bf74-ffba7515fae9">
 
-
-3. Test `make test`
-
-
+3. Test `make test`     
+<img width="891" alt="Screenshot 2023-09-12 at 5 57 30 PM" src="https://github.com/nogibjj/TianjiRao_Mini_Project_3/assets/104114843/5553601e-ffa0-4247-a29b-979b0e26d843">
 
 ## Reference
 https://pola-rs.github.io/polars/py-polars/html/   
