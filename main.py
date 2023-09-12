@@ -2,7 +2,7 @@
 Main Function For Polars Descriptive Statistics
 """
 
-import polars as pl
+# import polars as pl
 import matplotlib.pyplot as plt
 
 def polars_desc(data):
